@@ -307,6 +307,140 @@
           
         </div>
     </section>
+
+    <section class="broadcast-lesson">
+    <div class="lesson-content">
+        <div class="explanation-side">
+            <h2 class="lesson-title">Как работают сообщения?</h2>
+            <div class="story-bubble">
+                Представь, что герои — это актеры с <strong>невидимыми рациями</strong>. 
+                когда один заканчивает свою роль, он нажимает кнопку <span>и отправляет сигнал («передать сообщение»)</span>. 
+                все, у кого рация настроена на ту же волну, слышат сигнал и начинают действовать!
+            </div>
+            
+            <div class="mission-box">
+                <p><strong>твоя задача:</strong> посмотри пример и создай такой жа проект используя сообщения</p>
+              <iframe src="https://scratch.mit.edu/projects/1293360364/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <div style="text-align:center"><a href="hhttps://scratch.mit.edu/projects/1293365357" target="_blank" class="magic-button">
+                    открыть заготовку
+                </a> </div>
+            </div>
+        </div>
+
+       
+    </div>
+</section>
+
+<style>
+    :root {
+        --soft-pink: #fff0f3;
+        --soft-purple: #f3f0ff;
+        --accent-color: #008080;
+        --deep-accent: #800000;
+        --text-main: #4a4a4a;
+        --white: #ffffff;
+        --button-grad: linear-gradient(to top, #800000 0%, #d63031 100%);
+    }
+
+    .broadcast-lesson {
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 40px;
+        background: var(--white);
+        border-radius: 30px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    .lesson-content {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .explanation-side {
+        flex: 1;
+    }
+
+    .lesson-title {
+        color: var(--deep-accent);
+        text-transform: lowercase;
+        margin-top: 0;
+        font-size: 1.8rem;
+        border-bottom: 2px solid var(--soft-pink);
+        padding-bottom: 10px;
+    }
+
+    .story-bubble {
+        background: var(--soft-purple);
+        padding: 20px;
+        border-radius: 20px;
+        line-height: 1.6;
+        color: var(--text-main);
+        position: relative;
+        margin: 20px 0;
+    }
+
+    .story-bubble span {
+        color: var(--accent-color);
+        font-weight: bold;
+    }
+
+    .mission-box {
+        margin-top: 25px;
+    }
+
+    .magic-button {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 15px 35px;
+        background: var(--button-grad);
+        color: white !important;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.3s;
+        box-shadow: 0 8px 20px rgba(128, 0, 0, 0.2);
+    }
+
+    .magic-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 25px rgba(128, 0, 0, 0.3);
+    }
+
+    /* Фрейм */
+    .frame-side {
+        flex: 0 0 485px;
+    }
+
+    .iframe-container {
+        border: 8px solid var(--soft-pink);
+        border-radius: 25px;
+        overflow: hidden;
+        line-height: 0;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    /* Адаптивность для планшетов и телефонов */
+    @media (max-width: 950px) {
+        .lesson-content {
+            flex-direction: column;
+            text-align: center;
+        }
+        .frame-side {
+            flex: none;
+            width: 100%;
+            max-width: 485px;
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 485 / 402;
+        }
+    }
+</style>
 <!--
     <section class="card">
         <h2>Вдохновение</h2>
